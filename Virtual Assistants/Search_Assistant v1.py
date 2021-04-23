@@ -29,5 +29,4 @@ while True:
 
 # Close
 window.close()
-#
 
