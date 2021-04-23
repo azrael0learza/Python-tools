@@ -24,7 +24,7 @@ while True:
     answer= vclient.query(values[0])
     wolfram_res = next(answer.results).text
     wikires =  wikipedia.summary(values[0], sentences=1)
-    sg.popup(wolfram_res)
+    sg.popup(wolfram_res or wikires)
     
       
 # Close
