@@ -11,7 +11,7 @@ import PySimpleGUI as sg
   
 # Choose a Theme for the Layout
 sg.theme('DarkBlue2')
-layout =[[sg.Text('Enter a Query'), sg.InputText()],[sg.Button('Search'), sg.Button('Cancel')]]
+layout =[[sg.Text('Enter a Query'), sg.InputText()],[sg.Button('Search'), sg.Cancel('Cancel')]]
 window = sg.Window('Search Assistant', layout)
 
   
@@ -22,11 +22,11 @@ while True:
         break
     
     answer= vclient.query(values[0])
-    wolfram_res = next(answer.results).text
+    wolframres = next(answer.results).text
     wikires =  wikipedia.summary(values[0], sentences=1)
-    sg.popup(wolfram_res or wikires)
+    sg.popup(wolframres or wikires)
     
-      
+
 # Close
 window.close()
 #
