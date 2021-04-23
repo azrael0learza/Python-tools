@@ -31,4 +31,3 @@ while True:
 window.close()
 #
 
-#https://www.youtube.com/watch?v=NZMTWBpLUa4
