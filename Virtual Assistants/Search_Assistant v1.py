@@ -1,6 +1,6 @@
 #Import Section
 import wolframalpha
-vclient = wolframalpha.Client('PJ2AEP-2L96XYT68W')
+vclient = wolframalpha.Client('api-key')
 
 import wikipedia
 
@@ -29,4 +29,3 @@ while True:
 
 # Close
 window.close()
-
