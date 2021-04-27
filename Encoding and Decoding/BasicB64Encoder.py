@@ -8,7 +8,7 @@ layout = [[sg.Text("Enter Encoded Message")],
           [sg.Button('Ok'), sg.Button('Quit')]]
  
 
-window = sg.Window('Base64 Decoder', layout)
+window = sg.Window('Base64 Encoder', layout)
 
 
 while True:  
