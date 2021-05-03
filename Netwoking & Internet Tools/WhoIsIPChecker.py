@@ -29,8 +29,6 @@ while True:
     sg.Print('Result', do_not_reroute_stdout=False)
     pprint(res)
 
-    #sg.popup_scrolled(res)
-
 window.close()
 
 
